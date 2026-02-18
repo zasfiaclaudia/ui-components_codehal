@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    background: #d4fffd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger-wrapper{
+    width: 48px;
+    height: 48px;
+    background: #57a19e;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hamburger-wrapper .hamburger-icon{
+    width: 32px;
+    height: 32px;
+    background: url('src/menu.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+    filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, .1));
+}
+
+.hamburger-wrapper.active .hamburger-icon{
+    background: url('src/close.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
