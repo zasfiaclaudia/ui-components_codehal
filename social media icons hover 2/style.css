@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ddd;
+}
+
+.social-menu{
+    position: relative;
+    display: flex;
+}
+
+.social-icon{
+    position: relative;
+}
+
+.social-icon a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    margin:  0 8px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+    transform: translateY(0) scale(1);
+    transition: .3s;
+}
+
+.social-icon:hover a{
+    transform: translateY(-6px) scale(1.2);
+    margin: 0 24px;
+}
+
+.social-icon:nth-child(1):hover a{
+    background: #0099ff;
+}
+
+.social-icon:nth-child(2):hover a{
+    background: #3150ff;
+}
+
+.social-icon:nth-child(3):hover a{
+    background: linear-gradient(45deg, #eeff00, #ff0062, #d400ff, #0026ff);
+}
+
+.social-icon:nth-child(4):hover a{
+    background: #5c5c5c;
+}
+
+.social-icon:nth-child(5):hover a{
+    background: #ff0000;
+}
+
+.social-icon a i{
+    font-size: 18px;
+    color: black;
+    line-height: 40px;
+    transition: .3s;
+}
+
+.social-icon:hover a i{
+    color: #fff;
+}
+
+.social-icon span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 16px;
+    z-index: -1;
+    transition: .3s;
+} 
+
+.social-icon:hover span{
+    transform: translate(-50%, 90%) scale(1);
+}
+
+.social-icon:nth-child(1):hover span{
+    color: #0099ff;
+}
+
+.social-icon:nth-child(2):hover span{
+    color: #3150ff;
+}
+
+.social-icon:nth-child(3):hover span{
+    color: #ff006a
+}
+
+.social-icon:nth-child(4):hover span{
+    color: #5c5c5c;
+}
+
+.social-icon:nth-child(5):hover span{
+    color: #ff0000;
+}
